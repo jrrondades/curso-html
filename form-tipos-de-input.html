@@ -13,8 +13,9 @@
         button  -> Se comporta igual que un botón, <button>.
         color   -> Para especificar un color.
         date    -> Introducir una fecha.
-        datetime-> Obsoleto.
+        datetime-> Obsoleto. No utilizar.
         datetime-local-> Fecha y hora, no funciona en firefox.
+            TIP: * Se recomienda usar date y time para seleccionar fecha y hora.
         email   -> Para introducir un email.
         hidden  -> Campo oculto, puede contener valor, pero no se muestra.
         month   -> Para introducir el mes.
@@ -36,12 +37,26 @@
     <h1>Tipos de input</h1>
 
     <form>
-        <input>
-        <input type="button" value="Enviar NO">
-        <!--A diferencia de <button>, no envía el formulario.--> 
-        <!-- Para enviarlo con <input>, se utiliza type="submit" -->
-        <input type="submit" value="Enviar input">
-        <button>Enviar</button>
+        <div>
+            <h2>Botón</h2>
+            <input>
+            <input type="button" value="Enviar NO">
+            <!--A diferencia de <button>, no envía el formulario.--> 
+            <!-- Para enviarlo con <input>, se utiliza type="submit" -->
+            <input type="submit" value="Enviar input">
+            <button>Enviar</button>
+        </div>
+        <div>
+            <h2>Fecha</h2>
+            <input type="date">
+            <input type="datetime-local">
+            <div>
+                <input type="date">
+                <input type="time">
+            </div>
+            <input type="month">
+            <input type="week">
+        </div>
     </form>
     
 </body>
