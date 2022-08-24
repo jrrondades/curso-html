@@ -11,8 +11,8 @@
     La estructura básica de un formulario se compone de cuatro elementos:
 
     form    -> La etiqueta que engloba nuestro formulario.
-    label   -> Sirve para escribir el nombre de un campo a rellenar.
-    input   -> Sirve para crear un campo que permitirá al usuario interactuar.
+    label   -> Sirve para escribir el nombre de un campo a rellenar. Debe tener el atributo for al cual se le indica un id que emparejará el label con su input correspondiente.
+    input   -> Sirve para crear un campo que permitirá al usuario interactuar. El único atributo obligatorio es name.
     buttom  -> Crea un botón que permite enviar el formulario.
 -->
 
@@ -20,9 +20,14 @@
     <h1>Estructura básica de un formulario</h1>
 
     <form>
-        <label>Nombre</label>
-        <input>
+        <label for="name">Nombre</label>
+        <input id="name">
         <button>Enviar formulario</button>
+        <!-- Otra forma de enlazar label con input, aunque no suele utilizarse-->
+        <label>
+            Nombre2
+            <input>
+        </label>
     </form>
 </body>
 </html>
