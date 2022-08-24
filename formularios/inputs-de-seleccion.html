@@ -18,6 +18,8 @@
     Cada opción irá dentro de etiquetas <option> </option>.
 
     Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <optgroup> con el atributo label para nombrar la categoría.
+
+    datalist -> Funciona parecido a un select, sólo que se pueden filtrar los datos. Va asociado a un input.
 -->
 
 <body>
@@ -80,6 +82,20 @@
                     <option value="tarantula">Tarántula</option>
                 </optgroup>
             </select>
+        </div>
+        <div>
+            <h2>DataList</h2>
+            <input type="list" list="pets">
+            <datalist id="pets">
+                <option value="perro"></option>
+                <option value="gato"></ption>
+                <option value="hamster"></option>
+                <option value="conejo"></option>
+                <option value="loro"></option>
+                <option value="canario"></option>
+                <option value="serpiente"></option>
+                <option value="tarantula"></option>
+            </datalist>
         </div>
     </form>
 </body>
