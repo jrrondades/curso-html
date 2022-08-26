@@ -5,15 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contenido embebido</title>
-
   <style>
-    img {
+    video, img {
       max-width: 100%;
     }
   </style>
 </head>
+
+  <!--
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para "pintar" contanido.
+
+        DPR = piseles reales / pixeles disponibles
+  -->
+
 <body>
   <h1>Contenido embebido</h1>
-  <img src="/contenido-embebido/assets/images/733547.svg" alt="logo de facebook">
+  <!--<img src="/contenido-embebido/assets/images/portada.jpg" alt="logo de facebook">-->
+  <!--<img srcset="
+    /contenido-embebido/assets/images/portada.webp,
+    /contenido-embebido/assets/images/portada.jpg,
+    /contenido-embebido/assets/images/portada-mobile.webp 2x,
+    /contenido-embebido/assets/images/portada-mobile.jpg" 2x,
+    src="/contenido-embebido/assets/images/portada-mobile.jpg" 
+    alt="Contenido de portada">-->
+  <picture>
+    <!-- <source srcset="
+      /contenido-embebido/assets/images/portada.webp,
+      /contenido-embebido/assets/images/portada.jpg"> -->
+    <!--<source srcset="/contenido-embebido/assets/images/portada-mobile.webp" media="(max-width:1200px)">
+    <img src="/contenido-embebido/assets/images/portada.jpg" 
+      alt="Contenido de portada">-->
+  </picture>
+
+  <!-- <audio src="/contenido-embebido/assets/audio/oomiee.mp3" controls autoplay muted loop>
+  </audio> -->
+  
+  <!-- <video src="/contenido-embebido/assets/video/Creux De Van.mp4" controls muted loop poster="/contenido-embebido/assets/images/portada.jpg" autoplay ></video>s -->
+
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YSGCkHBFBZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+  <h2>Gatos</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt harum ab sapiente totam ad dolorem error atque aliquam obcaecati cupiditate explicabo excepturi similique illum nihil repellat eos in, voluptate nobis?</p>
+  <figure>
+    <img src="https://ca-times.brightspotcdn.com/dims4/default/87be6da/2147483647/strip/true/crop/1970x1108+39+0/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ccf62312d18a025f22ce48%2Fhoyla-recuento-11-cosas-aman-gatos-top-001" alt="gato boca arriba">
+    <figcaption>Gato boca arriba</figcaption>
+  </figure>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, rerum iusto. Libero vero architecto facilis blanditiis aliquam maxime deserunt consequuntur culpa itaque voluptatem! Reprehenderit repellendus dolore perferendis facere, praesentium harum?</p>
+
 </body>
 </html>
